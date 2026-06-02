@@ -1,0 +1,23 @@
+{
+  "title": "Troubleshooting: kube-apiserver won't start",
+  "description": "The control plane API server is down after a bad config change. Diagnose and fix it.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Task",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}

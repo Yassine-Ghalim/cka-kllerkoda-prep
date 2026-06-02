@@ -1,0 +1,23 @@
+{
+  "title": "Cluster Arch: create & approve a user certificate (CSR)",
+  "description": "Onboard user 'jane' via a CertificateSigningRequest and bind RBAC.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Task",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}

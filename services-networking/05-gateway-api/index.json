@@ -1,0 +1,23 @@
+{
+  "title": "Services & Networking (advanced): Gateway API",
+  "description": "Install Gateway API CRDs and route with a Gateway + HTTPRoute.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Task",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Troubleshooting: Deployment stuck ImagePullBackOff",
+  "description": "A deployment can't pull its image. Fix it so all replicas run.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Task",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
