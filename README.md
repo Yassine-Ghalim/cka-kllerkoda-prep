@@ -55,13 +55,18 @@ Every scenario runs in two places:
 source scripts/setup-aliases.sh
 
 ./cka.sh list                                          # see all scenarios
-./cka.sh setup  troubleshooting/04-service-no-endpoints  # create the broken state
+./cka.sh setup  troubleshooting/04-service-no-endpoints  # create the broken state + PRINT THE TASK
 #   ... solve it in your terminal ...
 ./cka.sh verify troubleshooting/04-service-no-endpoints  # PASS/FAIL
 ./cka.sh solution troubleshooting/04-service-no-endpoints  # walkthrough
+./cka.sh cleanup troubleshooting/04-service-no-endpoints  # tear down / restore when done
 ```
 
-`setup` is idempotent, so it doubles as `reset`. Scenarios that change node/control-plane
+`setup` prints the task right after building the state, so you always know what to do.
+Re-show it any time with `./cka.sh task <scenario>`. When finished, `./cka.sh cleanup
+<scenario>` removes what the scenario created and restores anything it changed (e.g.
+scales CoreDNS back up, restarts kubelet, uncordons node01, reverts the apiserver
+manifest). `setup` is idempotent, so it doubles as `reset`. Scenarios that change node/control-plane
 state (e.g. `01-broken-apiserver`, `02-node-notready`) assume a **kubeadm** cluster with
 `systemctl`/`crictl` access — run those on a disposable cluster, not production.
 
@@ -83,8 +88,9 @@ Each `index.json` uses `backend.imageid: kubernetes-kubeadm-2nodes` (a real 2-no
 ├── intro.md            # landing page + prerequisites
 ├── background.sh       # setup: builds the broken/initial state (runs at start)
 ├── step1/
-│   ├── text.md         # the task
+│   ├── text.md         # the task / question (printed by `./cka.sh setup`)
 │   └── verify.sh       # validation (exit 0 = pass; this is the Check button)
+├── cleanup.sh          # teardown: undoes setup / restores changed state
 ├── finish.md           # completion page
 └── solution.md         # full walkthrough (peek only when stuck)
 ```
