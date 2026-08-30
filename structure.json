@@ -1,13 +1,52 @@
 {
     "items": [
         {
-            "path": "cluster-architecture"
+            "path": "cluster-architecture/01-rbac"
         },
         {
-            "path": "services-networking"
+            "path": "cluster-architecture/02-csr-user-cert"
         },
         {
-            "path": "troubleshooting"
+            "path": "cluster-architecture/03-node-maintenance"
+        },
+        {
+            "path": "cluster-architecture/04-helm"
+        },
+        {
+            "path": "cluster-architecture/05-kustomize"
+        },
+        {
+            "path": "cluster-architecture/06-etcd-backup"
+        },
+        {
+            "path": "services-networking/01-expose-deployment"
+        },
+        {
+            "path": "services-networking/02-coredns-down"
+        },
+        {
+            "path": "services-networking/03-network-policy"
+        },
+        {
+            "path": "services-networking/04-ingress"
+        },
+        {
+            "path": "services-networking/05-gateway-api"
+        },
+        {
+            "path": "troubleshooting/01-broken-apiserver"
+        },
+        {
+            "path": "troubleshooting/02-node-notready"
+        },
+        {
+            "path": "troubleshooting/03-imagepull-failure"
+        },
+        {
+            "path": "troubleshooting/04-service-no-endpoints"
+        },
+        {
+            "path": "troubleshooting/05-pending-pod"
         }
     ]
 }
