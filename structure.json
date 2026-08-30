@@ -1,0 +1,13 @@
+{
+    "items": [
+        {
+            "path": "cluster-architecture"
+        },
+        {
+            "path": "services-networking"
+        },
+        {
+            "path": "troubleshooting"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "title": "Troubleshooting CKA Exercises",
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node"
+    },
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Cluster Troubleshooting Scenarios",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    }
+}

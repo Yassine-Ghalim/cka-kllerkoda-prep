@@ -1,0 +1,20 @@
+{
+    "title": "Cluster Architecture CKA Exercises",
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node"
+    },
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Troubleshoot Component",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    }
+}

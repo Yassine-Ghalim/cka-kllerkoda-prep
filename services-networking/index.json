@@ -1,0 +1,20 @@
+{
+    "title": "Services & Networking CKA Exercises",
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node"
+    },
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Troubleshoot Services and Networking",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    }
+}
